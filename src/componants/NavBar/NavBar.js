@@ -16,6 +16,7 @@ export const NavBar = () => {
         <div className='hiddenLinks'>
         <Link to="/">Home</Link>
           <Link to="/menu">Menu</Link>
+          <Link to="/cart">Cart</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
         </div>
@@ -23,6 +24,7 @@ export const NavBar = () => {
         <div className='Nav-menu'>
           <Link to="/">Home</Link>
           <Link to="/menu">Menu</Link>
+          <Link to="/cart">Cart</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
           

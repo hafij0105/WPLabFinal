@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Button, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
+import { CartContext } from './CartContext/CartContext'; 
 
 function MenuItem({ image, name, price }) {
   const [open, setOpen] = useState(false);
+  const { addToCart } = useContext(CartContext); 
 
-  const handleOrderClick = () => {
+  const handleAddToCart = () => {
+    addToCart({ image, name, price }); 
     setOpen(true); 
   };
 
   const handleClose = () => {
-    setOpen(false); 
+    setOpen(false);
   };
 
   return (
@@ -23,64 +26,19 @@ function MenuItem({ image, name, price }) {
       <Button
         variant="contained"
         color="primary"
-        onClick={handleOrderClick}
+        onClick={handleAddToCart}
         style={{ marginTop: '10px' }}
       >
-        Order Now
+        Add to Cart
       </Button>
 
-      
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        sx={{
-          '& .MuiDialog-paper': {
-            borderRadius: '20px',
-            backgroundColor: '#f8f9fa',
-            boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.3)',
-          },
-        }}
-      >
-        <DialogTitle
-          sx={{
-            fontSize: '20px',
-            fontWeight: 'bold',
-            color: '#333',
-            textAlign: 'center',
-          }}
-        >
-          🎉 Thank You!
-        </DialogTitle>
-        <DialogContent
-          sx={{
-            fontSize: '16px',
-            color: '#555',
-            textAlign: 'center',
-            padding: '20px',
-          }}
-        >
-          Thank you for ordering <strong>{name}</strong>!
+      <Dialog open={open} onClose={handleClose}>
+        <DialogTitle>🎉 Item Added to Cart!</DialogTitle>
+        <DialogContent>
+          <strong>{name}</strong> has been added to your cart!
         </DialogContent>
-        <DialogActions
-          sx={{
-            justifyContent: 'center',
-            paddingBottom: '20px',
-          }}
-        >
-          <Button
-            onClick={handleClose}
-            variant="contained"
-            color="secondary"
-            sx={{
-              padding: '10px 20px',
-              borderRadius: '30px',
-              backgroundColor: '#ff6f61',
-              color: '#fff',
-              '&:hover': {
-                backgroundColor: '#ff3e3e',
-              },
-            }}
-          >
+        <DialogActions>
+          <Button onClick={handleClose} variant="contained" color="secondary">
             Close
           </Button>
         </DialogActions>
