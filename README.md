@@ -12,6 +12,7 @@ In the about page , there is information about the homemade pitha shop and it's 
 If the customer has any question or review , they can send message to the shop using  the contact page from the navigation bar.
 ![ss8](https://github.com/user-attachments/assets/897bbafd-7026-409c-ba9e-d8c6cd20feca)
 No matter the screen size, our webpage ensures perfect functionality and aesthetics, delivering unparalleled versatility across all devices.
+The navigation bar minimzes itself into an interactive icon in mobile phones , tapping which show the navigation bar.
 ![ss9](https://github.com/user-attachments/assets/b806b4ef-fa45-4de8-a2d1-520baa0256d0)
 ![ss10](https://github.com/user-attachments/assets/e0b82b1c-119c-4c04-bcff-c91637bcf0e8)
 ![ss11](https://github.com/user-attachments/assets/0f3f1e28-a975-4f06-8da8-43644b727f46)
