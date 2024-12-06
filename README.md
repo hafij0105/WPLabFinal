@@ -4,7 +4,7 @@ From the homepage , tapping 'order now' or the 'menu' button on the navigation b
 ![ss2](https://github.com/user-attachments/assets/37f5ffb4-517c-4a43-8468-5b9204b53ba3)
 ![ss3](https://github.com/user-attachments/assets/13ffedfa-bd13-4dfe-a964-d46b7bb1b584)
 ![ss4](https://github.com/user-attachments/assets/77933e85-e888-4644-92e7-ee11783075e3)
-After adding the products in the cart , customers can open their cart from the navigation and purchase the product from there.
+After adding the products in the cart , customers can open their cart from the navigation and purchase the product from there and choose from two different payment method.
 ![ss5](https://github.com/user-attachments/assets/ba12290e-6a5b-4fa5-b92d-a3366038425b)
 In the about page , there is information about the homemade pitha shop and it's social media links.
 ![ss6](https://github.com/user-attachments/assets/f16f0011-677e-4813-9796-1957a9ac8103)
